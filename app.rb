@@ -4,53 +4,44 @@ require 'sinatra'
 ROOT = "http://www.harimenon.com"
 
 # Redirect
-# http://technology.harimenon.com/2012/12/lzwCompress.js.html
+# http://en.blog.harimenon.com/2009/11/laziness-prevails.html
 # to
-# http://www.harimenon.com/blog/2012/12/06/lzwCompress.js/
-get '/2013/01/note-to-self-could-be-useful-someday.html' do
-  redirect "#{ROOT}/blog/2013/01/16/note-to-self-could-be-useful-someday/", 301
+# http://www.harimenon.com/blog/2009/11/01/laziness-prevails/
+get '/2009/11/laziness-prevails.html' do
+  redirect "#{ROOT}/blog/2009/11/01/laziness-prevails/", 301
 end
-get '/2013/01/single-click-deployment.html' do
-  redirect "#{ROOT}/blog/2013/01/15/single-click-deployment/", 301
+get '/2009/09/husn-e-haqiqi-english-translation.html' do
+  redirect "#{ROOT}/blog/2009/09/20/husn-e-haqiqi-english-translation/", 301
 end
-get '/2012/12/aop-for-logging-in-net.html' do
-  redirect "#{ROOT}/blog/2012/12/16/aop-for-logging-in-net/", 301
+get '/2009/07/it-keeps-flowing.html' do
+  redirect "#{ROOT}/blog/2009/07/16/it-keeps-flowing/", 301
 end
-get '/2012/12/lzwCompress.js.html' do
-  redirect "#{ROOT}/blog/2012/12/06/lzwCompress.js/", 301
+get '/2009/06/out-of-college-and-not-yet-into-first.html' do
+  redirect "#{ROOT}/blog/2009/06/27/out-of-college-and-not-yet-into-first/", 301
 end
-get '/2012/12/useful-git-commands.html' do
-  redirect "#{ROOT}/blog/2012/12/06/useful-git-commands/", 301
+get '/2009/06/why-is-it-that-i-am-not-able-to-blog.html' do
+  redirect "#{ROOT}/blog/2009/06/23/why-is-it-that-i-am-not-able-to-blog/", 301
 end
-get '/2012/11/json-minification.html' do
-  redirect "#{ROOT}/blog/2012/11/09/json-minification/", 301
+get '/2009/03/if.html' do
+  redirect "#{ROOT}/blog/2009/03/13/if/", 301
 end
-get '/2012/09/convert-all-jpgs-in-folder-to-pdfs-with.html' do
-  redirect "#{ROOT}/blog/2012/09/04/convert-all-jpgs-in-folder-to-pdfs-with/", 301
+get '/2009/03/to-this-i-put-my-name.html' do
+  redirect "#{ROOT}/blog/2009/03/13/to-this-i-put-my-name/", 301
 end
-get '/2012/05/creating-dynamic-types-in-net.html' do
-  redirect "#{ROOT}/blog/2012/05/24/creating-dynamic-types-in-net/", 301
+get '/2008/06/13-year-old-addressing-un.html' do
+  redirect "#{ROOT}/blog/2008/06/07/13-year-old-addressing-un/", 301
 end
-get '/2012/02/detect-jquery-presence.html' do
-  redirect "#{ROOT}/blog/2012/02/02/detect-jquery-presence/", 301
+get '/2007/12/noir-verses.html' do
+  redirect "#{ROOT}/blog/2007/12/05/noir-verses/", 301
 end
-get '/2012/02/array-min-max-jquery-map.html' do
-  redirect "#{ROOT}/blog/2012/02/01/array-min-max-jquery-map/", 301
-end
-get '/2010/11/sort-dropdownselect-list-items-using.html' do
-  redirect "#{ROOT}/blog/2010/11/10/sort-dropdownselect-list-items-using/", 301
-end
-get '/2009/08/displaying-version-for-microsoft.html' do
-  redirect "#{ROOT}/blog/2009/08/26/displaying-version-for-microsoft/", 301
-end
-get '/2009/06/adding-in-new-window-link-on-sharepoint.html' do
-  redirect "#{ROOT}/blog/2009/06/23/adding-in-new-window-link-on-sharepoint/", 301
+get '/2005/09/my-first-ever-blog.html' do
+  redirect "#{ROOT}/blog/2005/09/18/my-first-ever-blog/", 301
 end
 
 # Redirect
-# http://technology.harimenon.com/search/label/ClickOnce Deployment
+# http://en.blog.harimenon.com/search/label/cyber%20AWOL
 # to
-# http://www.harimenon.com/blog/categories/clickonce-deployment/
+# http://www.harimenon.com/blog/categories/cyber-awol/
 
 # DevTool -> devtools
 # asp.net -> asp-net
@@ -61,7 +52,7 @@ get '/search/label/:label' do |label|
   redirect "#{ROOT}/blog/categories/#{category}/", 301
 end
 
-# http://technology.harimenon.com/2011_12_01_archive.html
+# http://en.blog.harimenon.com/2011_12_01_archive.html
 # =>
 # http://www.harimenon.com/blog/archives/
 get '/:year_:month_:day_archive.html' do
@@ -69,14 +60,14 @@ get '/:year_:month_:day_archive.html' do
 end
 
 
-# technology.harimenon.com -> www.harimenon.com/blog/categories/technical/
+# en.blog.harimenon.com -> www.harimenon.com/blog/categories/english-blog/
 get '/' do
-  redirect "#{ROOT}/blog/categories/technical/", 301
+  redirect "#{ROOT}/blog/categories/english-blog/", 301
 end
 
 
 # Feeds
-# technology.harimenon.com/feeds/posts/default => FeedBurner
+# en.blog.harimenon.com/feeds/posts/default => FeedBurner
 get '/feeds/posts/default' do
   redirect "#{ROOT}/atom.xml", 301
 end
