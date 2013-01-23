@@ -37,7 +37,7 @@ end
 # ruby-on-rails -> ruby-on-rails
 
 get '/search/label/:label' do |label|
-  category = URI::encode(label).downcase.gsub(/[^\w|%]/) { '-' }
+  category = URI::encode(label).downcase.gsub(/[^\w|%]|%20/) { '-' }
   redirect "#{ROOT}/blog/categories/#{category}/", 301
 end
 
