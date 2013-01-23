@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'sinatra'
+require 'open-uri'
 
 ROOT = "http://www.harimenon.com"
 
@@ -36,7 +37,7 @@ end
 # ruby-on-rails -> ruby-on-rails
 
 get '/search/label/:label' do |label|
-  category = label.downcase.gsub(/\W/) { '-' }
+  category = URI::encode(label.downcase.gsub(/\W/) { '-' })
   redirect "#{ROOT}/blog/categories/#{category}/", 301
 end
 
