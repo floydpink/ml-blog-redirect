@@ -8,22 +8,22 @@ ROOT = "http://www.harimenon.com"
 # to
 # http://www.harimenon.com/blog/2011/02/09/എഴുതണമെന്നു-ആഗ്രഹമുണ്ടായാല്‍-മാത്രം-പോരല്ലോ/
 get '/2011/02/blog-post.html' do
-  redirect "#{ROOT}/blog/2011/02/09/എഴുതണമെന്നു-ആഗ്രഹമുണ്ടായാല്‍-മാത്രം-പോരല്ലോ/", 301
+  redirect "#{ROOT}/blog/2011/02/09/%E0%B4%8E%E0%B4%B4%E0%B5%81%E0%B4%A4%E0%B4%A3%E0%B4%AE%E0%B5%86%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%81-%E0%B4%86%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%B9%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%BE%E0%B4%AF%E0%B4%BE%E0%B4%B2%E0%B5%8D%E2%80%8D-%E0%B4%AE%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%82-%E0%B4%AA%E0%B5%8B%E0%B4%B0%E0%B4%B2%E0%B5%8D%E0%B4%B2%E0%B5%8B/", 301
 end
 get '/2009/11/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/11/17/ഇടവേള-തുടരുന്നു/", 301
+  redirect "#{ROOT}/blog/2009/11/17/%E0%B4%87%E0%B4%9F%E0%B4%B5%E0%B5%87%E0%B4%B3-%E0%B4%A4%E0%B5%81%E0%B4%9F%E0%B4%B0%E0%B5%81%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%81/", 301
 end
 get '/2009/07/blog-post_23.html' do
-  redirect "#{ROOT}/blog/2009/07/23/ശ്രീശൈലത്തെക്കൊരു-തീര്‍ത്ഥയാത്ര-ഭാഗം-ഒന്നര/", 301
+  redirect "#{ROOT}/blog/2009/07/23/%E0%B4%B6%E0%B5%8D%E0%B4%B0%E0%B5%80%E0%B4%B6%E0%B5%88%E0%B4%B2%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8A%E0%B4%B0%E0%B5%81-%E0%B4%A4%E0%B5%80%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%AF%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0-%E0%B4%AD%E0%B4%BE%E0%B4%97%E0%B4%82-%E0%B4%92%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B4%B0/", 301
 end
 get '/2009/07/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/07/08/ശ്രീശൈലത്തെക്കൊരു-തീര്‍ത്ഥയാത്ര-ഭാഗം-ഒന്ന്/", 301
+  redirect "#{ROOT}/blog/2009/07/08/%E0%B4%B6%E0%B5%8D%E0%B4%B0%E0%B5%80%E0%B4%B6%E0%B5%88%E0%B4%B2%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8A%E0%B4%B0%E0%B5%81-%E0%B4%A4%E0%B5%80%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%AF%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0-%E0%B4%AD%E0%B4%BE%E0%B4%97%E0%B4%82-%E0%B4%92%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%8D/", 301
 end
 get '/2009/06/blog-post_29.html' do
-  redirect "#{ROOT}/blog/2009/06/29/പ്രവാസിമനസ്സ്/", 301
+  redirect "#{ROOT}/blog/2009/06/29/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B4%B5%E0%B4%BE%E0%B4%B8%E0%B4%BF%E0%B4%AE%E0%B4%A8%E0%B4%B8%E0%B5%8D%E0%B4%B8%E0%B5%8D/", 301
 end
 get '/2009/06/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/06/25/എന്താണിതിന്റെ-ഒക്കെ-അര്‍ത്ഥം/", 301
+  redirect "#{ROOT}/blog/2009/06/25/%E0%B4%8E%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B4%BE%E0%B4%A3%E0%B4%BF%E0%B4%A4%E0%B4%BF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%86-%E0%B4%92%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%86-%E0%B4%85%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%82/", 301
 end
 
 # Redirect
