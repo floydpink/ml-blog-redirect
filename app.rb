@@ -4,44 +4,32 @@ require 'sinatra'
 ROOT = "http://www.harimenon.com"
 
 # Redirect
-# http://en.blog.harimenon.com/2009/11/laziness-prevails.html
+# http://ml.blog.harimenon.com/2011/02/blog-post.html
 # to
-# http://www.harimenon.com/blog/2009/11/01/laziness-prevails/
-get '/2009/11/laziness-prevails.html' do
-  redirect "#{ROOT}/blog/2009/11/01/laziness-prevails/", 301
+# http://www.harimenon.com/blog/2011/02/09/എഴുതണമെന്നു-ആഗ്രഹമുണ്ടായാല്‍-മാത്രം-പോരല്ലോ/
+get '/2011/02/blog-post.html' do
+  redirect "#{ROOT}/blog/2011/02/09/എഴുതണമെന്നു-ആഗ്രഹമുണ്ടായാല്‍-മാത്രം-പോരല്ലോ/", 301
 end
-get '/2009/09/husn-e-haqiqi-english-translation.html' do
-  redirect "#{ROOT}/blog/2009/09/20/husn-e-haqiqi-english-translation/", 301
+get '/2009/11/blog-post.html' do
+  redirect "#{ROOT}/blog/2009/11/17/ഇടവേള-തുടരുന്നു/", 301
 end
-get '/2009/07/it-keeps-flowing.html' do
-  redirect "#{ROOT}/blog/2009/07/16/it-keeps-flowing/", 301
+get '/2009/07/blog-post_23.html' do
+  redirect "#{ROOT}/blog/2009/07/23/ശ്രീശൈലത്തെക്കൊരു-തീര്‍ത്ഥയാത്ര-ഭാഗം-ഒന്നര/", 301
 end
-get '/2009/06/out-of-college-and-not-yet-into-first.html' do
-  redirect "#{ROOT}/blog/2009/06/27/out-of-college-and-not-yet-into-first/", 301
+get '/2009/07/blog-post.html' do
+  redirect "#{ROOT}/blog/2009/07/08/ശ്രീശൈലത്തെക്കൊരു-തീര്‍ത്ഥയാത്ര-ഭാഗം-ഒന്ന്/", 301
 end
-get '/2009/06/why-is-it-that-i-am-not-able-to-blog.html' do
-  redirect "#{ROOT}/blog/2009/06/23/why-is-it-that-i-am-not-able-to-blog/", 301
+get '/2009/06/blog-post_29.html' do
+  redirect "#{ROOT}/blog/2009/06/29/പ്രവാസിമനസ്സ്/", 301
 end
-get '/2009/03/if.html' do
-  redirect "#{ROOT}/blog/2009/03/13/if/", 301
-end
-get '/2009/03/to-this-i-put-my-name.html' do
-  redirect "#{ROOT}/blog/2009/03/13/to-this-i-put-my-name/", 301
-end
-get '/2008/06/13-year-old-addressing-un.html' do
-  redirect "#{ROOT}/blog/2008/06/07/13-year-old-addressing-un/", 301
-end
-get '/2007/12/noir-verses.html' do
-  redirect "#{ROOT}/blog/2007/12/05/noir-verses/", 301
-end
-get '/2005/09/my-first-ever-blog.html' do
-  redirect "#{ROOT}/blog/2005/09/18/my-first-ever-blog/", 301
+get '/2009/06/blog-post.html' do
+  redirect "#{ROOT}/blog/2009/06/25/എന്താണിതിന്റെ-ഒക്കെ-അര്‍ത്ഥം/", 301
 end
 
 # Redirect
-# http://en.blog.harimenon.com/search/label/cyber%20AWOL
+# http://ml.blog.harimenon.com/search/label/അർദ്ധവിരാമം
 # to
-# http://www.harimenon.com/blog/categories/cyber-awol/
+# http://www.harimenon.com/blog/categories/അർദ്ധവിരാമം/
 
 # DevTool -> devtools
 # asp.net -> asp-net
@@ -52,7 +40,7 @@ get '/search/label/:label' do |label|
   redirect "#{ROOT}/blog/categories/#{category}/", 301
 end
 
-# http://en.blog.harimenon.com/2011_12_01_archive.html
+# http://ml.blog.harimenon.com/2009_06_01_archive.html
 # =>
 # http://www.harimenon.com/blog/archives/
 get '/:year_:month_:day_archive.html' do
@@ -60,14 +48,14 @@ get '/:year_:month_:day_archive.html' do
 end
 
 
-# en.blog.harimenon.com -> www.harimenon.com/blog/categories/english-blog/
+# ml.blog.harimenon.com -> www.harimenon.com/blog/categories/malayalam-blog/
 get '/' do
-  redirect "#{ROOT}/blog/categories/english-blog/", 301
+  redirect "#{ROOT}/blog/categories/malayalam-blog/", 301
 end
 
 
 # Feeds
-# en.blog.harimenon.com/feeds/posts/default => FeedBurner
+# ml.blog.harimenon.com/feeds/posts/default => FeedBurner
 get '/feeds/posts/default' do
   redirect "#{ROOT}/atom.xml", 301
 end
