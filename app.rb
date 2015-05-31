@@ -60,3 +60,8 @@ end
 get '/feeds/posts/default' do
   redirect "#{ROOT}/atom.xml", 301
 end
+
+get '/robots.txt' do
+  content_type 'text/plain'
+  'User-agent: *' + "\n" + 'Disallow: /'
+end
