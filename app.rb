@@ -38,7 +38,7 @@ end
 
 get '/search/label/:label' do |label|
   category = URI::encode(label).downcase.gsub(/[^\w|%]|%20/) { '-' }
-  redirect "#{ROOT}/categories/#{category}/", 301
+  redirect "#{ROOT}/tags/#{category}/", 301
 end
 
 # http://ml.blog.harimenon.com/2009_06_01_archive.html
@@ -49,9 +49,9 @@ get '/:year_:month_:day_archive.html' do
 end
 
 
-# ml.blog.harimenon.com -> www.harimenon.com/categories/malayalam-blog/
+# ml.blog.harimenon.com -> www.harimenon.com/tags/malayalam-blog/
 get '/' do
-  redirect "#{ROOT}/categories/malayalam-blog/", 301
+  redirect "#{ROOT}/tags/malayalam-blog/", 301
 end
 
 
