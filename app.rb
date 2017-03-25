@@ -30,7 +30,7 @@ end
 # Redirect
 # http://ml.blog.harimenon.com/search/label/അർദ്ധവിരാമം
 # to
-# https://harimenon.com/categories/അർദ്ധവിരാമം/
+# https://harimenon.com/tags/അർദ്ധവിരാമം/
 
 # DevTool -> devtools
 # asp.net -> asp-net
