@@ -2,35 +2,35 @@ require 'bundler/setup'
 require 'sinatra'
 require 'open-uri'
 
-ROOT = "https://harimenon.com"
+ROOT = "https://new.harimenon.com"
 
 # Redirect
 # http://ml.blog.harimenon.com/2011/02/blog-post.html
 # to
-# https://harimenon.com/blog/2011/02/09/എഴുതണമെന്നു-ആഗ്രഹമുണ്ടായാല്‍-മാത്രം-പോരല്ലോ/
+# https://harimenon.com/2011/02/10/ezuthanamennu-aagrahamundaayal-matram-porallo/
 get '/2011/02/blog-post.html' do
-  redirect "#{ROOT}/blog/2011/02/10/%E0%B4%8E%E0%B4%B4%E0%B5%81%E0%B4%A4%E0%B4%A3%E0%B4%AE%E0%B5%86%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%81-%E0%B4%86%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%B9%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B4%BE%E0%B4%AF%E0%B4%BE%E0%B4%B2%E0%B5%8D%E2%80%8D-%E0%B4%AE%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%82-%E0%B4%AA%E0%B5%8B%E0%B4%B0%E0%B4%B2%E0%B5%8D%E0%B4%B2%E0%B5%8B/", 301
+  redirect "#{ROOT}/2011/02/10/ezuthanamennu-aagrahamundaayal-matram-porallo/", 301
 end
 get '/2009/11/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/11/18/%E0%B4%87%E0%B4%9F%E0%B4%B5%E0%B5%87%E0%B4%B3-%E0%B4%A4%E0%B5%81%E0%B4%9F%E0%B4%B0%E0%B5%81%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%81/", 301
+  redirect "#{ROOT}/2009/11/18/idavela-thudarunnu/", 301
 end
 get '/2009/07/blog-post_23.html' do
-  redirect "#{ROOT}/blog/2009/07/24/%E0%B4%B6%E0%B5%8D%E0%B4%B0%E0%B5%80%E0%B4%B6%E0%B5%88%E0%B4%B2%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8A%E0%B4%B0%E0%B5%81-%E0%B4%A4%E0%B5%80%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%AF%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0-%E0%B4%AD%E0%B4%BE%E0%B4%97%E0%B4%82-%E0%B4%92%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B4%B0/", 301
+  redirect "#{ROOT}/2009/07/24/srisailathekkoru-theerthayatra-part-one-and-half/", 301
 end
 get '/2009/07/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/07/08/%E0%B4%B6%E0%B5%8D%E0%B4%B0%E0%B5%80%E0%B4%B6%E0%B5%88%E0%B4%B2%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8A%E0%B4%B0%E0%B5%81-%E0%B4%A4%E0%B5%80%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%AF%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%B0-%E0%B4%AD%E0%B4%BE%E0%B4%97%E0%B4%82-%E0%B4%92%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B5%8D/", 301
+  redirect "#{ROOT}/2009/07/08/srisailathekkoru-theerthayatra-part-one/", 301
 end
 get '/2009/06/blog-post_29.html' do
-  redirect "#{ROOT}/blog/2009/06/30/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B4%B5%E0%B4%BE%E0%B4%B8%E0%B4%BF%E0%B4%AE%E0%B4%A8%E0%B4%B8%E0%B5%8D%E0%B4%B8%E0%B5%8D/", 301
+  redirect "#{ROOT}/2009/06/30/pravasimanassu/", 301
 end
 get '/2009/06/blog-post.html' do
-  redirect "#{ROOT}/blog/2009/06/25/%E0%B4%8E%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B4%BE%E0%B4%A3%E0%B4%BF%E0%B4%A4%E0%B4%BF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%86-%E0%B4%92%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%86-%E0%B4%85%E0%B4%B0%E0%B5%8D%E2%80%8D%E0%B4%A4%E0%B5%8D%E0%B4%A5%E0%B4%82/", 301
+  redirect "#{ROOT}/2009/06/25/enthaanithinte-okke-artham/", 301
 end
 
 # Redirect
 # http://ml.blog.harimenon.com/search/label/അർദ്ധവിരാമം
 # to
-# https://harimenon.com/blog/categories/അർദ്ധവിരാമം/
+# https://harimenon.com/categories/അർദ്ധവിരാമം/
 
 # DevTool -> devtools
 # asp.net -> asp-net
@@ -38,20 +38,20 @@ end
 
 get '/search/label/:label' do |label|
   category = URI::encode(label).downcase.gsub(/[^\w|%]|%20/) { '-' }
-  redirect "#{ROOT}/blog/categories/#{category}/", 301
+  redirect "#{ROOT}/categories/#{category}/", 301
 end
 
 # http://ml.blog.harimenon.com/2009_06_01_archive.html
 # =>
-# https://harimenon.com/blog/archives/
+# https://harimenon.com/archives/
 get '/:year_:month_:day_archive.html' do
-  redirect "#{ROOT}/blog/archives/", 301
+  redirect "#{ROOT}/archives/", 301
 end
 
 
-# ml.blog.harimenon.com -> www.harimenon.com/blog/categories/malayalam-blog/
+# ml.blog.harimenon.com -> www.harimenon.com/categories/malayalam-blog/
 get '/' do
-  redirect "#{ROOT}/blog/categories/malayalam-blog/", 301
+  redirect "#{ROOT}/categories/malayalam-blog/", 301
 end
 
 
