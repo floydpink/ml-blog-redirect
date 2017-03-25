@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'open-uri'
 
-ROOT = "https://new.harimenon.com"
+ROOT = "https://harimenon.com"
 
 # Redirect
 # http://ml.blog.harimenon.com/2011/02/blog-post.html
