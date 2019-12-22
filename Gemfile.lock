@@ -13,7 +13,7 @@ GEM
     tilt (2.0.10)
 
 PLATFORMS
-  ruby
+  ruby '2.6.5'
 
 DEPENDENCIES
   sinatra
