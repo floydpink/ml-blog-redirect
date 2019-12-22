@@ -13,10 +13,14 @@ GEM
     tilt (2.0.10)
 
 PLATFORMS
-  ruby '2.6.5'
+  ruby
+  unknown
 
 DEPENDENCIES
   sinatra
+
+RUBY VERSION
+   ruby 2.6.5p114
 
 BUNDLED WITH
    2.1.2
